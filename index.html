@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Умная викторина</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="theme-screen">
+    <h1>🎯 Выберите тему</h1>
+    <div class="themes-container">
+      <button class="theme-btn" data-theme="science">Наука</button>
+      <button class="theme-btn" data-theme="history">История</button>
+      <button class="theme-btn" data-theme="geography">География</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="quiz-screen">
+    <div class="progress">
+      Вопрос <span id="current-question">1</span>/<span id="total-questions">10</span>
+    </div>
+    <h2 id="question-text">Текст вопроса</h2>
+    <div id="options-container" class="options"></div>
+    <button id="next-btn" class="hidden">Далее</button>
+  </div>
+
+  <div class="container hidden" id="result-screen">
+    <h1>🎉 Результаты</h1>
+    <p>Вы ответили правильно на <span id="score">0</span> из <span id="total">10</span> вопросов!</p>
+    <button id="restart-btn">Выбрать другую тему</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

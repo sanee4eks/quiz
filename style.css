@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .themes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .theme-btn {
+    background: #9b59b6;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .theme-btn:hover {
+    background: #8e44ad;
+  }
+  
+  .theme-btn[data-theme="science"]::before {
+    content: "🔬 ";
+  }
+  
+  .theme-btn[data-theme="history"]::before {
+    content: "🏛️ ";
+  }
+  
+  .theme-btn[data-theme="geography"]::before {
+    content: "🌍 ";
+  }
+  
+  .options {
+    margin: 25px 0;
+  }
+  
+  .option-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .option-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .option-btn.correct {
+    background: #2ecc71 !important;
+    color: white;
+  }
+  
+  .option-btn.incorrect {
+    background: #e74c3c !important;
+    color: white;
+  }
+  
+  .progress {
+    margin-bottom: 25px;
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  #question-text {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+  
+  .hidden {
+    display: none;
+  }
